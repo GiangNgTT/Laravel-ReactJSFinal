@@ -1,0 +1,25 @@
+.AboutUs{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.title_large{
+    font-size: 25px;
+}
+
+.image1{
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+    width: 800px;
+    height: auto;
+}
+.content{
+    padding-left: 30px;
+}
+.title1{
+    text-align: center;
+}
+/* div.article > p:last-child{
+    font-style: italic;
+    color: brown;
+} */

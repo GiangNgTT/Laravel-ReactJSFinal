@@ -1,0 +1,82 @@
+.container-fluid {
+  padding: 5% 0;
+  width: 100%;
+}
+
+.container-fluid form .tile_booking {
+  text-align: center;
+  padding-left: 35%;
+  color: black;
+  font-weight: bold;
+}
+
+#phoneName {
+  width: 60%;
+  margin-left: 40px;
+}
+
+.phone_name {
+  margin-left: 40px;
+}
+
+.flex_contain {
+
+  width: 100%;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  gap: 50px;
+}
+
+.vl {
+  border-left: 1px solid rgb(39, 40, 39);
+  height: 200px;
+  position: absolute;
+  padding: 50%;
+  left: 40%;
+  margin-left: -3px;
+}
+
+.form__info-phone {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5%;
+  gap: 30px;
+}
+
+.form__info__service,
+.form__info__customer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+label {
+  display: block;
+  line-height: 2.4;
+}
+
+.btn--yellow {
+  width: 100%;
+  font-size: 150%;
+  font-weight: 700;
+  background-color: #ffef1d;
+}
+
+input, textarea {
+  line-height: 2.4;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+input, textarea:focus {
+  line-height: 2.4;
+  outline: none;
+}
+
+.text {
+  width: 100%;
+}

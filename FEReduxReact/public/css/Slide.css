@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+ul {
+    list-style: none;
+}
+
+#wrap {
+    /* background-color: rgba(56, 56, 56, 0.268); */
+    position: relative;
+    width: 90%;
+    height: 200px;
+    margin: 10px auto;
+    /* border: 3px solid rgb(56, 56, 56); */
+    overflow: hidden;
+
+
+}
+
+#slider {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    font: 100px/400px;
+    text-align: center;
+    color: #fff;
+    /* margin-left: 0; */
+    -webkit-animation: 10s ease-out infinite;
+
+}
+
+#slider img {
+
+    width: 900px;
+    height: 100%;
+}
+
+/*Tạo ba hoạt ảnh*/
+@-webkit-keyframes slide1 {
+    0% {
+        margin-left: 0;
+    }
+
+    23% {
+        margin-left: 0;
+    }
+
+    33% {
+        margin-left: -600px;
+    }
+
+    56% {
+        margin-left: -600px;
+    }
+
+    66% {
+        margin-left: -1200px;
+    }
+
+    90% {
+        margin-left: -1200px;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+@-webkit-keyframes slide2 {
+    0% {
+        margin-left: -600px;
+    }
+
+    23% {
+        margin-left: -600px;
+    }
+
+    33% {
+        margin-left: -1200px;
+    }
+
+    56% {
+        margin-left: -1200px;
+    }
+
+    66% {
+        margin-left: 0;
+    }
+
+    90% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: -600px;
+    }
+}
+
+@-webkit-keyframes slide3 {
+    0% {
+        margin-left: -1200px;
+    }
+
+    23% {
+        margin-left: -1200px;
+    }
+
+    33% {
+        margin-left: 0;
+    }
+
+    56% {
+        margin-left: 0;
+    }
+
+    66% {
+        margin-left: -600px;
+    }
+
+    90% {
+        margin-left: -600px;
+    }
+
+    100% {
+        margin-left: -1200px;
+    }
+}
+
+
+/*Sửa đổi tên hoạt ảnh*/
+#l01:checked~#wrap #slider {
+    -webkit-animation-name: slide1;
+}
+
+#l02:checked~#wrap #slider {
+    -webkit-animation-name: slide2;
+}
+
+#l03:checked~#wrap #slider {
+    -webkit-animation-name: slide3;
+}
+
+
+/*mô phỏng khởi động lại hoạt ảnh*/
+#l01:active~#wrap #slider {
+    -webkit-animation-name: none;
+    margin-left: 0;
+}
+
+#l02:active~#wrap #slider {
+    -webkit-animation-name: none;
+    margin-left: -600px;
+}
+
+#l03:active~#wrap #slider {
+    -webkit-animation-name: none;
+    margin-left: -1200px;
+}
+
+/* 
+#opts {
+    width: 600px;
+    height: 40px;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    font: 20px/40px;
+}
+
+#opts label {
+    float: left;
+    width: 100px;
+    height: 40px;
+    margin-right: 4px;
+    background: #01254a;
+    cursor: pointer;
+}
+
+#opts label:hover {
+    background: #405871;
+} */
+
+
+#l01, #l02, #l03 {
+    display: none;
+}

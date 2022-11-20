@@ -1,0 +1,69 @@
+.Itemlinking, .linItemlinkingking {
+    text-decoration: none;
+}
+
+.image-wrapper {
+    width: 200px;
+    height: 200px;
+}
+
+.proDetail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.proDetail:hover {
+    transform: scale(1);
+}
+
+.image-wrapper--detail {
+    width: 400px;
+    height: 400px;
+    transition: all 1s;
+}
+
+.image-wrapper--detail:hover {
+    transform: scale(1.2);
+}
+
+.info {
+    margin-top: 120px;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.name-wrapper--detail {
+    font-size: 150%;
+    font-weight: 800;
+    width: 500px;
+}
+
+.price-wrapper {
+    font-size: 150%;
+    font-weight: 500;
+    width: 500px;
+}
+
+.des-wrapper {
+    width: 500px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.note__title {
+    font-size: 150%;
+}
+
+.detail_contact {
+    margin-bottom: 50px;
+}
+
+.detail_contact_a {
+    font-size: 200%;
+    font-weight: 500;
+    text-decoration: none;
+}
